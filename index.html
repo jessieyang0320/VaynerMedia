@@ -14,6 +14,9 @@
 <body>
 
 <div class="MyTable">
+  <div class="heading">
+    User 1
+  </div>
 
   <div class="MyTable-Tr title">
   
@@ -24,38 +27,48 @@
   </div>
   
  <div class="MyTable-Tr "> 
- <!-- album data goes here -->
-         
+ <!-- album data goes here -->        
  </div>
   
 </div>
+
+<div class="MyTable">
+  <div class="heading">
+    User 2
+  </div>
+  <div class="MyTable-Tr title">
+  
+    <div class="MyTable-Td"> id
+    </div>
+    <div class="MyTable-Td"> title
+    </div>          
+  </div>
+  
+ <div class="MyTable-Tr "> 
+ <!-- album data goes here -->        
+ </div>
+  
+</div>
+
+
 
  <script type="text/javascript">
 $.ajax({
         url: "http://jsonplaceholder.typicode.com/users/1/albums",
         type: 'GET',
         dataType: 'json', // added data type
-        success: function(res) {
-            
-
+        success: function(res) {            
             var items = [];
              $.each(res, function(key,value){
-                items.push("<div class='MyTable-Tr' id='"+ value.id +"'>")
-                
+                items.push("<div class='MyTable-Tr' id='"+ value.id +"'>")                
                 items.push("<div class='MyTable-Td''>"+ value.id+ "</div>" )
-                items.push("<div class='MyTable-Td'>"+ value.title+ "</div>")
-               
-                items.push("</div>")
-              
-            })
-
-             console.log(items.join(''))
-
-             $(".MyTable").append(items.join(''))
-
-            
+                items.push("<div class='MyTable-Td'>"+ value.title+ "</div>")               
+                items.push("</div>")              
+            })             
+             $(".MyTable").append(items.join(''))            
         }
     });
+
 
 </script> 
 

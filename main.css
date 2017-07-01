@@ -1,4 +1,17 @@
-.MyTable {display:table;text-align:center}
+body{
+    width: 100%;
+    padding:50px;
+    display: flex;
+}
+
+
+.MyTable {display:table;text-align:center; padding: 25px}
 .MyTable .MyTable-Tr {display:table-row}
 .MyTable .MyTable-Tr .MyTable-Td {display:table-cell; padding:10px; border-bottom: solid 1px #000}
 .MyTable .title {background:gray;color:white}
+
+.heading{
+    text-align: center;
+    color: blue;
+    font-size: 1.5em;
+}
