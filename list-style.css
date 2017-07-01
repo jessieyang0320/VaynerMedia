@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "proxima-nova",sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a {
+  color:white;
+}
+
+.user ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.album-list > li:nth-of-type(even){
+  background: white;
+  border-radius: 4px;
+}
+.user ul li {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+.user ul li:last-child {
+  border-bottom: 0;
+}
+
+.user a {
+  text-decoration: none;
+  background:#FEFF00;
+  padding:10px;
+  color:black;
+  border-radius:4px;
+}
+
+
+.user h2 {
+  text-transform: uppercase;
+  color:white;
+  letter-spacing: 2px;
+  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.price {
+  font-size: 50px;
+  font-family: serif;
+  margin: 10px 0;
+}
+
+/*make flex container*/
+.albums-grid {
+  max-width:750px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+
+}
+
+.user {
+  
+  background:rgba(255,255,255,0.2);
+  margin:20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+
+  flex:1;
+}
+
+.draggable {
+  background: yellow;
+}
+
+
+
+
+
+
+

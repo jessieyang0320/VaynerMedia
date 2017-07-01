@@ -1,4 +1,0 @@
-.MyTable {display:table;text-align:center}
-.MyTable .MyTable-Tr {display:table-row}
-.MyTable .MyTable-Tr .MyTable-Td {display:table-cell; padding:10px; border-bottom: solid 1px #000}
-.MyTable .title {background:gray;color:white}
